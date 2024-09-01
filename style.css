@@ -1,4 +1,5 @@
 /* ESTILO GERAL */
+/* Remove margens e preenchimentos padrões, define box-sizing para incluir bordas no cálculo das dimensões e usa a fonte "Poppins". */
 *{
     margin: 0;
     padding: 0;
@@ -6,16 +7,19 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* Define o fundo do body como preto e ocupa toda a altura da tela. */
 body{
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     height: 100vh;
 }
 
+/* Centraliza o conteúdo dentro da largura máxima de 1280px. */
 .interface {
     max-width: 1280px;
     margin: 0 auto;
 }
 
+/* Estiliza botões da classe .btn-contato com padding, tamanho e cor de fundo. */
 .btn-contato button {
     padding: 10px 40px;
     font-size: 18px;
@@ -27,38 +31,43 @@ body{
     transition: .2s;
 }
 
+/* Define um layout flexível. */
 .flex {
     display: flex;
 }
 
-
+/* Estiliza os elementos h2 com a classe .titulo, ajustando cor, tamanho e alinhamento. */
 h2.titulo {
     color: white;
     font-size: 38px;
     text-align: center;
 }
 
+/* Estiliza os spans dentro de h2 com a classe .titulo, mudando a cor. */
 h2.titulo span{
     color: #0b436e;
 }
 
+/* Aplica sombra e um leve aumento no tamanho dos botões ao passar o mouse. */
 button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #0b436e;
     transform: scale(1.05);
 }
 
 /* ESTILO CABEÇALHO */
-
+/* Adiciona padding ao header. */
 header {
     padding: 40px 4%;
 }
 
+/* Organiza elementos do header com flexbox, alinhando-os ao centro e distribuindo-os. */
 header > .interface {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-A;
 }
 
+/* Estiliza links dentro do header, mudando cor e removendo sublinhado. */
 header a{
     color: #7d7d7d;
     text-decoration: none;
@@ -66,37 +75,43 @@ header a{
     transition: .2s;
 }
 
+/* Muda a cor dos links e aplica leve aumento no tamanho ao passar o mouse. */
 header a:hover {
     color: #fff;
     transform: scale(1.05);
 }
 
+/* Remove os marcadores das listas dentro do nav do header. */
 header nav ul {
     list-style-type: none;
 }
 
+/* Define os itens da lista como elementos inline com espaçamento entre eles. */
 header nav li {
     display: inline-block;
     padding: 0 40px;
 }
 
+/* Define a largura e altura da imagem da logo. */
 .logo img {
-    width: 300px;  /* Define a largura desejada */
-    height: 150px;  /* Define a altura desejada */
+    width: 300px;
+    height: 150px;
 }
 
 /* Estilo do topo do site */
-
+/* Adiciona padding ao topo do site. */
 section.topo-do-site {
     padding: 40px 4%;
 }
 
+/* Alinha os elementos do topo ao centro e aplica um gap entre eles. */
 section.topo-do-site .flex {
     align-items: center;
     justify-content: center;
     gap: 90px;
 }
 
+/* Estiliza o h1 do topo, ajustando cor, tamanho e alinhamento. */
 .topo-do-site h1 {
     color: white;
     font-size: 30px;
@@ -105,23 +120,27 @@ section.topo-do-site .flex {
     text-transform: uppercase;
 }
 
+/* Muda a cor dos spans dentro do h1 do topo. */
 .topo-do-site .txt-topo-site h1 span {
     color: #0b436e;;
 }
 
+/* Estiliza parágrafos do topo, ajustando cor, margens e alinhamento. */
 .topo-do-site .txt-topo-site p{
     color: white;
     margin: 40px 0;
-    text-align: justify
+    text-align: justify;
 }
 
+/* Define largura, altura e animação de flutuação para as imagens do topo. */
 .topo-do-site .img-topo-site img{
     position: relative;
     animation: flutuar 2s ease-in-out infinite alternate;
-    width: 450px;  /* Define a largura desejada */
-    height: 250px;  /* Define a altura desejada */
+    width: 450px;
+    height: 250px;
 }
 
+/* Animação de flutuação para as imagens do topo. */
 @keyframes flutuar {
     0% {
         top: 0;
@@ -131,15 +150,18 @@ section.topo-do-site .flex {
     }
 }
 
-/*ESTILO DAS ESPECIALIDADES */
-
+/* ESTILO DAS ESPECIALIDADES */
+/* Adiciona padding à seção de especialidades. */
 section.especialidades { 
     padding: 40px 4%;
 }
 
+/* Aplica gap entre os elementos flexíveis na seção de especialidades. */
 section.especialidades .flex {
     gap: 60px;
 }
+
+/* Estiliza os boxes de especialidades com cor, padding, borda e transição. */
 .especialidades .especialidades-box {
     color: white;
     padding: 40px;
@@ -148,60 +170,70 @@ section.especialidades .flex {
     transition: .2s;
 }
 
+/* Aplica um leve aumento no tamanho e sombra nos boxes de especialidades ao passar o mouse. */
 .especialidades .especialidades-box:hover {
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.404);
 }
 
+/* Define cor e tamanho dos ícones dentro dos boxes de especialidades. */
 .especialidades .especialidades-box i {
     color: #0b436e;
     font-size: 50px;
 }
 
+/* Define o tamanho e espaçamento dos títulos dentro dos boxes de especialidades. */
 .especialidades .especialidades-box h3 {
     font-size: 28px;
     margin: 15px 0;
 }
 
 /* ESTILO DO SOBRE */
-
+/* Adiciona padding à seção de sobre. */
 section.sobre {
     padding: 80px 4%;
 }
 
+/* Alinha os elementos flexíveis dentro da seção de sobre ao centro e aplica um gap. */
 section.sobre .flex {
     align-items: center;
     gap: 60px;
 }
 
+/* Estiliza o texto dentro da seção sobre, ajustando cor, tamanho e margens. */
 .sobre .txt-sobre {
     color: #fff;
 }
 
+/* Estiliza os títulos dentro da seção de sobre, ajustando fonte, linha e margens. */
 .sobre .txt-sobre h2 {
     font: 40px;
     line-height: 40px;
     margin-bottom: 30px;
 }
 
+/* Muda a cor dos spans dentro dos títulos da seção sobre e os torna blocos. */
 .sobre .txt-sobre h2 span {
     color: #0b436e;
     display: block;
 }
 
+/* Define largura, altura e bordas arredondadas para a imagem dentro da seção sobre. */
 .img-sobre {
-    width: 600px;  /* Define a largura desejada */
-    height: 300px;  /* Define a altura desejada */
+    width: 600px;
+    height: 300px;
     display: flex;
     border-radius: 20px;
 }
 
+/* Estiliza os parágrafos dentro da seção sobre, ajustando margens e alinhamento. */
 .sobre .txt-sobre p {
     margin: 20px 0;
     text-align: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+/* Estiliza botões de redes sociais dentro da seção sobre, ajustando tamanho, cor e transição. */
+.btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -214,18 +246,19 @@ section.sobre .flex {
 }
 
 /* ESTILO DO PORTFOLIO */
-
+/* Adiciona padding à seção de portfólio e aplica sombra. */
 section.portfolio {
     padding: 80px 4%;
     box-shadow: 0 0 40px 10px #ffffff15;
 }
 
+/* Distribui os elementos flexíveis dentro da seção de portfólio com espaçamento ao redor. */
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-
 }
 
+/* Define dimensões e propriedades de transição para as imagens do portfólio. */
 .img-port {
     width: 360px;
     height: 460px;
@@ -237,10 +270,12 @@ section.portfolio .flex {
     position: relative;
 }
 
+/* Anima as imagens do portfólio ao passar o mouse, mudando a posição do background. */
 .img-port:hover{
     background-position: 100% 100%;
 }
 
+/* Define a sobreposição nas imagens do portfólio, com cor, centralização de texto e transição de opacidade. */
 .overlay {
     position: absolute;
     top: 0;
@@ -259,16 +294,18 @@ section.portfolio .flex {
     transition: .5s;
 }
 
+/* Aumenta a opacidade da sobreposição ao passar o mouse. */
 .overlay:hover {
     opacity: 1;
 }
 
 /* ESTILO DO FORMULARIO DE CONTATO */
-
+/* Adiciona padding à seção de formulário. */
 section.formulario  {
     padding: 80px 4%;
 }
 
+/* Estiliza o formulário com largura máxima, centralização e gap entre elementos. */
 form {
     max-width: 500px;
     margin: 0 auto;
@@ -279,6 +316,7 @@ form {
     margin-top: 40px;
 }
 
+/* Define largura, cor e outras propriedades dos inputs e textareas dentro do formulário. */
 form input, form textarea {
     width: 100%;
     background-color: #3f3d3d;
@@ -290,34 +328,96 @@ form input, form textarea {
     font-size: 18px;
 }
 
-form input::placeholder {
-    /* DA PRA EDITAR OS TEXTOS */
-}
-
+/* Desabilita o redimensionamento do textarea e define altura máxima. */
 form textarea {
     resize: none;
     max-height: 200px;
 }
 
+/* Centraliza o botão de envio do formulário e aplica margem superior. */
 form .btn-enviar {
     margin-top: 20px;
     text-align: center;
-
 }
 
+/* Define estilo para o botão de envio do formulário, ajustando cor, tamanho e transição. */
 form .btn-enviar input {
     width: 120px;
     background-color: #0b436e;
-    color: black;
+    color: rgba(0, 0, 0, 0.747);
     font-weight: 700;
     cursor: pointer;
     transition: .2s;
 }
 
 /* ESTILO FOOTER */
-
+/* Define largura, altura e exibição para a logo no footer. */
 footer .logo-footer {
-    width: 150px;  /* Define a largura desejada */
-    height: 100px;  /* Define a altura desejada */
+    width: 150px;
+    height: 100px;
     display: flex;
+}
+
+/* Adiciona padding e sombra ao footer. */
+footer {
+    padding: 40px 4%;
+    box-shadow: 0 0 40px 10px #ffffff15;
+}
+
+/* Distribui elementos flexíveis dentro do footer com espaçamento. */
+footer .flex {
+    justify-content: space-between;
+}
+
+/* Adiciona padding à linha de rodapé. */
+footer .line-footer{
+    padding: 20px 0;
+}
+
+/* Aplica uma borda superior ao elemento com a classe .borda. */
+.borda {
+    border-top: 2px solid #0b436e;
+}
+
+/* Estiliza ícones dentro do footer, ajustando cor e tamanho. */
+footer .line-footer p i {
+    color: #0b436e;
+    font-size: 22px;
+}
+
+/* Estiliza links dentro do footer, ajustando cor e padding. */
+footer .line-footer p a{
+    color: white;
+    padding: 10px;
+}
+
+/* RESPONSIVO */
+/* Define regras de estilo para telas menores que 1020px. */
+@media screen and (max-width: 1020px) {
+    /* Classes Gerais */
+    .flex{
+        flex-direction: column;
+    }
+    /* Cabeçalho */
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+    /* Topo do site */
+    
+    .topo-do-site h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .sobre .img-sobre{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
 }
