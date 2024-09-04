@@ -14,7 +14,8 @@
     <!-- Importação dos ícones do Bootstrap. -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!-- Link para o arquivo de estilos CSS personalizado. -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="componentes/styles.css">
+    <!-- Link para arquivo de javscript -->
 </head>
 
 <body>
@@ -29,15 +30,15 @@
             <!-- Menu de navegação para desktop -->
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="#">Inicio</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Projeto</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#portfolio">Projetos</a></li>
                 </ul>
             </nav>
             <!-- Botão de contato no cabeçalho -->
             <div class="btn-contato">
-                <a href="#">
+                <a href="#contato">
                     <button>Contato</button>
                 </a>
             </div>
@@ -47,7 +48,7 @@
     <!-- Conteúdo principal da página -->
     <main>
         <!-- Seção de introdução ao site -->
-        <section class="topo-do-site">
+        <section id="inicio" class="topo-do-site">
             <div class="interface">
                 <div class="flex">
                     <!-- Texto de boas-vindas e introdução -->
@@ -55,10 +56,6 @@
                         <h1>Aqui a criatividade encontra otimização e sonhos ganham vida<span>.</span></h1>
                         <p>Cada ideia tem o potencial de se tornar algo extraordinário. Como desenvolvedor web, minha missão é criar experiências online que refletem seus sonhos, combinando criatividade, otimização e design intuitivo. Cada projeto é uma oportunidade única de transformar visões em realidade, com funcionalidade e performance impecáveis.</p>
                         <!-- Botão para entrar em contato -->
-                        <div class="btn-contato">
-                            <a href="#"></a>
-                            <button>Entre em Contato</button>
-                        </div>
                     </div>
                     <!-- Imagem de destaque -->
                     <div class="img-topo-site">
@@ -69,7 +66,7 @@
         </section> <!--Topo do site-->
 
         <!-- Seção de especialidades -->
-        <section class="especialidades">
+        <section id="especialidades" class="especialidades">
             <div class="interface">
                 <!-- Título da seção -->
                 <h2 class="titulo">MINHAS <span>ESPECIALIDADES.</span></h2>
@@ -95,7 +92,7 @@
         </section> <!--Especialidades-->
 
         <!-- Seção sobre mim -->
-        <section class="sobre">
+        <section id="sobre" class="sobre">
             <div class="interface">
                 <div class="flex">
                     <!-- Imagem do desenvolvedor -->
@@ -105,8 +102,7 @@
                     <!-- Texto sobre o desenvolvedor -->
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER, <span>SOU RAFAEL VIKUATES.</span></h2>
-                        <p>Sou um profissional versátil com experiência em logística e comércio exterior, além de uma paixão pelo desenvolvimento front-end.</p>
-                        <p>Minha jornada profissional me levou a adquirir competências técnicas sólidas em HTML, CSS, JavaScript e frameworks como React. Na Santa Maria e Millpar, gerenciei operações logísticas complexas, aplicando soluções tecnológicas inovadoras. Agora, estou focado em criar interfaces intuitivas e funcionais, combinando minha expertise em otimização de processos com habilidades em desenvolvimento web.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa quibusdam praesentium deleniti rerum, corporis delectus itaque in iste assumenda quia tempora doloremque totam explicabo ab fuga illo excepturi natus eveniet eligendi aspernatur! Autem, harum iusto. Reprehenderit magni explicabo neque. Aut dicta temporibus nihil quis facere tempore ex quam rem accusantium quaerat eos reprehenderit voluptatibus laborum neque quas molestiae, quae nobis fugiat. Repellat fugit dolore maiores facilis suscipit debitis similique. Accusamus natus tempore sit, dolores assumenda harum, maxime quibusdam ipsa voluptate commodi ut illum ullam impedit amet repellat ea tempora aperiam. Voluptas id vero numquam incidunt fugit ullam, nobis perspiciatis nam!.</p>
                         <!-- Botões de redes sociais -->
                         <div class="btn-social">
                             <a href="https://www.instagram.com/rafavikuates/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
@@ -120,7 +116,7 @@
         </section><!--Sobre-->
 
         <!-- Seção de portfólio -->
-        <section class="portfolio">
+        <section id="portfolio" class="portfolio">
             <div class="interface">
                 <!-- Título da seção -->
                 <h2 class="titulo">MEU <span>PORTFÓLIO</span></h2>
@@ -140,7 +136,7 @@
         </section> <!--Portfolio-->
 
         <!-- Seção de formulário de contato -->
-        <section class="formulario">
+        <section id="contato" class="formulario">
             <div class="interface">
                 <!-- Título da seção -->
                 <h2 class="titulo">FALA <span>COMIGO.</span></h2>
@@ -182,6 +178,6 @@
             </div>
         </div> <!--Interface-->
     </footer> <!--footer-->
-
+    <script src="index.js"></script>
 </body>
 </html>

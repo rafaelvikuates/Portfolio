@@ -1,0 +1,38 @@
+/* RESPONSIVO */
+/* Define regras de estilo para telas menores que 1020px. */
+@media screen and (max-width: 769px) {
+    /* Classes Gerais */
+    .flex{
+        flex-direction: column;
+    }
+    /* Cabeçalho */
+    .menu-desktop, .btn-contato {
+        display: none;
+    }
+    /* Topo do site */
+    
+    .topo-do-site h1 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+
+    section.topo-do-site {
+        padding: 20px 8%;
+    }
+
+    .sobre .img-sobre{
+        width: 100%;
+    }
+
+    section.topo-do-site .flex {
+        gap: 40px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+    
+    footer .logo-footer {
+        display: none;
+    }
+}

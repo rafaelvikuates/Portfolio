@@ -1,0 +1,37 @@
+/* ESTILO DAS ESPECIALIDADES */
+/* Adiciona padding à seção de especialidades. */
+section.especialidades { 
+    padding: 40px 4%;
+}
+
+/* Aplica gap entre os elementos flexíveis na seção de especialidades. */
+section.especialidades .flex {
+    gap: 60px;
+}
+
+/* Estiliza os boxes de especialidades com cor, padding, borda e transição. */
+.especialidades .especialidades-box {
+    color: white;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+/* Aplica um leve aumento no tamanho e sombra nos boxes de especialidades ao passar o mouse. */
+.especialidades .especialidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.404);
+}
+
+/* Define cor e tamanho dos ícones dentro dos boxes de especialidades. */
+.especialidades .especialidades-box i {
+    color: #0b436e;
+    font-size: 50px;
+}
+
+/* Define o tamanho e espaçamento dos títulos dentro dos boxes de especialidades. */
+.especialidades .especialidades-box h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}

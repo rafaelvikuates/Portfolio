@@ -1,0 +1,44 @@
+/* ESTILO DO PORTFOLIO */
+/* Adiciona padding à seção de portfólio e aplica sombra. */
+section.portfolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff15;
+}
+
+/* Distribui os elementos flexíveis dentro da seção de portfólio com espaçamento ao redor. */
+section.portfolio .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+/* Define dimensões e propriedades de transição para as imagens do portfólio. */
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-size: contain;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+/* Define a sobreposição nas imagens do portfólio, com cor, centralização de texto e transição de opacidade. */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.788);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+/* Aumenta a opacidade da sobreposição ao passar o mouse. */
+.overlay:hover {
+    opacity: 1;
+}

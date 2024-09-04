@@ -1,0 +1,51 @@
+/* Estilo do topo do site */
+/* Adiciona padding ao topo do site. */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+/* Alinha os elementos do topo ao centro e aplica um gap entre eles. */
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+/* Estiliza o h1 do topo, ajustando cor, tamanho e alinhamento. */
+.topo-do-site h1 {
+    color: white;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+/* Muda a cor dos spans dentro do h1 do topo. */
+.topo-do-site .txt-topo-site h1 span {
+    color: #0b436e;;
+}
+
+/* Estiliza parágrafos do topo, ajustando cor, margens e alinhamento. */
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+/* Define largura, altura e animação de flutuação para as imagens do topo. */
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    width: 450px;
+    height: 250px;
+}
+
+/* Animação de flutuação para as imagens do topo. */
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
