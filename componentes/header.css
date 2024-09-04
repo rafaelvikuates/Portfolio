@@ -1,0 +1,43 @@
+/* ESTILO CABEÇALHO */
+/* Adiciona padding ao header. */
+header {
+    padding: 40px 4%;
+}
+
+/* Organiza elementos do header com flexbox, alinhando-os ao centro e distribuindo-os. */
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-A;
+}
+
+/* Estiliza links dentro do header, mudando cor e removendo sublinhado. */
+header a{
+    color: #7d7d7d;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+
+/* Muda a cor dos links e aplica leve aumento no tamanho ao passar o mouse. */
+header a:hover {
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* Remove os marcadores das listas dentro do nav do header. */
+header nav ul {
+    list-style-type: none;
+}
+
+/* Define os itens da lista como elementos inline com espaçamento entre eles. */
+header nav li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/* Define a largura e altura da imagem da logo. */
+.logo img {
+    width: 300px;
+    height: 150px;
+}

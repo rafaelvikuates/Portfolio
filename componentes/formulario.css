@@ -1,0 +1,50 @@
+/* ESTILO DO FORMULARIO DE CONTATO */
+/* Adiciona padding à seção de formulário. */
+section.formulario  {
+    padding: 80px 4%;
+}
+
+/* Estiliza o formulário com largura máxima, centralização e gap entre elementos. */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+/* Define largura, cor e outras propriedades dos inputs e textareas dentro do formulário. */
+form input, form textarea {
+    width: 100%;
+    background-color: #3f3d3d;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+/* Desabilita o redimensionamento do textarea e define altura máxima. */
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+/* Centraliza o botão de envio do formulário e aplica margem superior. */
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Define estilo para o botão de envio do formulário, ajustando cor, tamanho e transição. */
+form .btn-enviar input {
+    width: 120px;
+    background-color: #0b436e;
+    color: rgba(0, 0, 0, 0.747);
+    font-weight: 700;
+    cursor: pointer;
+    transition: .2s;
+}

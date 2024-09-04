@@ -1,0 +1,56 @@
+/* ESTILO GERAL */
+/* Remove margens e preenchimentos padrões, define box-sizing para incluir bordas no cálculo das dimensões e usa a fonte "Poppins". */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Define o fundo do body como preto e ocupa toda a altura da tela. */
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+/* Centraliza o conteúdo dentro da largura máxima de 1280px. */
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Estiliza botões da classe .btn-contato com padding, tamanho e cor de fundo. */
+.btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: #0b436e;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+/* Define um layout flexível. */
+.flex {
+    display: flex;
+}
+
+/* Estiliza os elementos h2 com a classe .titulo, ajustando cor, tamanho e alinhamento. */
+h2.titulo {
+    color: white;
+    font-size: 38px;
+    text-align: center;
+}
+
+/* Estiliza os spans dentro de h2 com a classe .titulo, mudando a cor. */
+h2.titulo span{
+    color: #0b436e;
+}
+
+/* Aplica sombra e um leve aumento no tamanho dos botões ao passar o mouse. */
+button:hover, form .btn-enviar input:hover {
+    box-shadow: 0px 0px 8px #0b436e;
+    transform: scale(1.05);
+}

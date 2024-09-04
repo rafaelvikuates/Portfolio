@@ -1,0 +1,56 @@
+/* ESTILO DO SOBRE */
+/* Adiciona padding à seção de sobre. */
+section.sobre {
+    padding: 80px 4%;
+}
+
+/* Alinha os elementos flexíveis dentro da seção de sobre ao centro e aplica um gap. */
+section.sobre .flex {
+    align-items: center;
+    gap: 60px;
+}
+
+/* Estiliza o texto dentro da seção sobre, ajustando cor, tamanho e margens. */
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+/* Estiliza os títulos dentro da seção de sobre, ajustando fonte, linha e margens. */
+.sobre .txt-sobre h2 {
+    font: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+/* Muda a cor dos spans dentro dos títulos da seção sobre e os torna blocos. */
+.sobre .txt-sobre h2 span {
+    color: #0b436e;
+    display: block;
+}
+
+/* Define largura, altura e bordas arredondadas para a imagem dentro da seção sobre. */
+.img-sobre {
+    width: 600px;
+    height: 300px;
+    display: flex;
+    border-radius: 20px;
+}
+
+/* Estiliza os parágrafos dentro da seção sobre, ajustando margens e alinhamento. */
+.sobre .txt-sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+
+/* Estiliza botões de redes sociais dentro da seção sobre, ajustando tamanho, cor e transição. */
+.btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #0b436e;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .2s;
+}
